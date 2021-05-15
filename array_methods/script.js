@@ -107,10 +107,25 @@ function getFullName(arr) {
   return newArr;
 }
 
-//!9 ???? todo: разобраться!
+//!9 ???? разобраться!
 /**
  * Ф-ция перемешивает случайным образом элементы массива.
  */
 function shuffle(arr) {}
 
 //!10
+/**
+ * Ф-ция принимает массив объектов пользователей и сортирует их по возрасту
+ */
+
+function sortByAge(arr) {
+  return arr.sort((a, b) => a.age - b.age);
+}
+
+//!11
+/**
+ * Ф-ция принимает массив объектов со свойством age и возвращает средний возраст
+ */
+function getAverageAge(users) {
+  return users.reduce((acc, user) => acc + user.age, 0) / users.length;
+}
